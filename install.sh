@@ -11,9 +11,9 @@ echo "Enter the DB_PASSWORD: "
 read password
 
 echo "Writing to config file: config.php"
-echo '<?php \n
-define("DB_NAME", "bw_monitor");\n
-define("DB_SERVER", "$server");\n
-define("DB_USER", "$user");\n
-define("DB_PASSWORD", "$password");\n
+echo '<?php
+define("DB_NAME", "bw_monitor");
+define("DB_SERVER", "'$server'");
+define("DB_USER", "'$user'");
+define("DB_PASSWORD", "'$password'");
 ?>' > config.php;
