@@ -17,3 +17,6 @@ define("DB_SERVER", "'$server'");
 define("DB_USER", "'$user'");
 define("DB_PASSWORD", "'$password'");
 ?>' > config.php;
+
+mysql -u$user -p$password -e "CREATE DATABASE bw_monitor"
+mysql -u$user -p$password bw_monitor < schema.sql
